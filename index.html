@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<title>calculator</title>
+	</head>
+	<body>
+		<div id="background">
+			<h1 id="cal">calculator</h1>
+			<div id="up"></div>
+			<h1 id="shownum"></h1>
+
+			<div id="calculator">
+				<div id="result">
+					<div id="history">
+						<p id="history-value"></p>
+					</div>
+					<div id="output">
+						<p id="output-value"> </p>
+					</div>
+				</div>
+				<div id="keyboard">
+					<button class="operator" id="clear" onclick="c()">C</button>
+					<button class="operator" id="backspace" onclick="ce()">CE</button>
+					<button class="operator" id="%" onclick="c()">%</button>
+					<button class="operator" id="/" onclick="c()">&#247;</button>
+					<button class="number" id="7" onclick="moveup7()">7</button>
+					<button class="number" id="8" onclick="moveup8()">8</button>
+					<button class="number" id="9" onclick="moveup9()">9</button>
+					<button class="operator" id="*" onclick="c()">&times;</button>
+					<button class="number" id="4" onclick="moveup4()">4</button>
+					<button class="number" id="5" onclick="moveup5()">5</button>
+					<button class="number" id="6" onclick="moveup6()">6</button>
+					<button class="operator" id="-" onclick="c()">-</button>
+					<button class="number" id="1" onclick="moveup1()">1</button>
+					<button class="number" id="2" onclick="moveup2()">2</button>
+					<button class="number" id="3" onclick="moveup3()">3</button>
+					<button class="operator" id="+" onclick="c()">+</button>
+					<button class="empty" id="empty"></button>
+					<button class="number" id="0">0</button>
+					<button class="empty" id="empty"></button>
+					<button class="operator" id="=">=</button>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
